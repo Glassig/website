@@ -1,0 +1,65 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+main {
+	background: lightblue;
+	display: block;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -100px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+footer, .page-wrap:after  {
+	height: 100px;
+}
+
+footer  {
+	padding-top: 10px;
+	text-align: center;
+	color: #BCECFF;
+	background-color: #36393B;
+}
+.social-media {
+	padding: 1em;
+	-moz-column-count: 3;
+	-moz-column-gap: 1em;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 1em;
+	column-count: 3;
+	column-gap: 1em;
+}
+
+/*
+mobile stuff, where nav is a div to the left and section is a div 
+to the right. when size too small (mobile) they are above each other
+@media screen and (min-width:600px) {
+  nav {
+    float: left;
+    width: 25%;
+  }
+  section {
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width:599px) {
+  nav li {
+    display: inline;
+  }
+}
+*/
