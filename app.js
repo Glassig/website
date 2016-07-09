@@ -1,17 +1,14 @@
 var express = require("express");
 var app = express();
 var v_path = __dirname + '/views/';
-var p_path = __dirname+'/public';
-/*
-  'https://www.facebook.com/angelina.vongegerfelt',
-  'github.com/glassig',
-  'https://www.linkedin.com/in/angelina-von-gegerfelt-8a8558108?trk=hp-identity-name',
-  'angelina.v.gegerfelt@gmail.com'
-*/
+var p_path = __dirname + '/public/';
+var partials = v_path + '/partials/'
+var fs = require('fs');
+
 app.set('view engine', 'hbs')
 //app.use(helmet());
 
-app.use(express.static(__dirname+'/public'));
+app.use(express.static(p_path));
 
 app.use(function (req,res,next) {
 	console.log("/" + req.method);
@@ -23,18 +20,18 @@ app.get("/",function(req,res){
 });
 
 app.get("/boxes", function(req,res){
-	res.render('boxes');
+	    var myfiles=[];
+	fs.readdir(p_path + '/build/', function(err,files){
+	    if(err) throw err;
+	    files.forEach(function(file){
+	        // do something with each file HERE!
+	        var content = fs.readFileSync(partials + file, 'utf8');
+	        myfiles.push(content);
+	    });
+	});
+	res.render('boxes', {box: myfiles});
 })
-/*
-app.get("/about",function(req,res){
-	res.sendFile(v_path + "about.html");
-});
 
-app.get("/contact",function(req,res){
-	res.sendFile(v_path + "contact.html");
-});
-
-*/
 app.use("*",function(req,res){
 	res.render('404');
 });
@@ -42,3 +39,5 @@ app.use("*",function(req,res){
 app.listen(3000,function(){
 	console.log("Live at Port 3000");
 });
+
+
