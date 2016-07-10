@@ -2,7 +2,7 @@ var express = require("express");
 var app = express();
 var v_path = __dirname + '/views/';
 var p_path = __dirname + '/public/';
-var partials = v_path + '/partials/'
+var box_location = p_path + 'build/'
 var fs = require('fs');
 
 app.set('view engine', 'hbs')
@@ -20,12 +20,12 @@ app.get("/",function(req,res){
 });
 
 app.get("/boxes", function(req,res){
-	    var myfiles=[];
-	fs.readdir(p_path + '/build/', function(err,files){
+	var myfiles=[];
+	fs.readdir(box_location, function(err,files){
 	    if(err) throw err;
 	    files.forEach(function(file){
 	        // do something with each file HERE!
-	        var content = fs.readFileSync(partials + file, 'utf8');
+	        var content = fs.readFileSync(box_location + file, 'utf8');
 	        myfiles.push(content);
 	    });
 	});

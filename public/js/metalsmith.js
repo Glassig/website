@@ -9,7 +9,7 @@ beautify = require('metalsmith-beautify')
 
 dir = {
 	src : __dirname + '/../src/',
-	build : __dirname + '/../../views/partials',
+	build : __dirname + '/../build',
 	layout : __dirname + '/../layouts'
 }
 
