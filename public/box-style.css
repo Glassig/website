@@ -41,25 +41,31 @@
 }
 
 #edu {
-  	background-color: #faae3d;/*
+    background-color: #92aac7;/*
   	Fcc875
   	#eab364;*/
 }
 
-#proj {
-  	background-color: #92aac7;/*#97b8c2;*/
+#proj {/*#97b8c2;*/
+    background-color: #faae3d;
 }
 
 #filler {
-  	background-color: #e05858;/*#ed5752;*/
+  background-color: #bf9a77;/*#ed5752;*/
 }
 #utak {
-	background-color: #bf9a77;
+    background-color: #e05858;
 }
 
 
 .boxes h1 {
 	color: white;/*#be9bb5;*/
 	text-align: center;
+  font-size: 1.7em;
 	font-variant: small-caps;
+}
+
+.boxes h3 {
+  font-size: 1.2em;
+  text-align: center;
 }

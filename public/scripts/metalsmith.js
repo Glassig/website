@@ -2,7 +2,7 @@
 Metalsmith = require('metalsmith')
 markdown = require('metalsmith-markdown')
 layouts = require('metalsmith-layouts')
-//inplace = require('metalsmith-in-place')
+inplace = require('metalsmith-in-place')
 //feed = require('metalsmith-feed')
 //permalinks = require('metalsmith-permalinks')
 beautify = require('metalsmith-beautify')
@@ -21,6 +21,8 @@ Metalsmith(__dirname)
 		directory: dir.layout
 	}))
 	.use(beautify())
+	.use(inplace({
+		engine: 'handlebars'}))
 	.source(dir.src)
     .destination(dir.build)
     .build(function (err) { if(err) console.log(err) })
