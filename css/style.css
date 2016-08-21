@@ -10,62 +10,10 @@ html, body {
 	height: 100%;
 	background-color: #EDEDED;
 }
-.content {
-	margin: 2%;
-}
-.page-wrap {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -150px; 
-}
-.page-wrap:after {
-  content: "";
-  display: block;
-}
 
-header {
-	background-color: #36393B;
-	text-align: center;
-	color: #EDEDED;
-	height: 75px;
-	min-height: 100%;
-	font-size: 200%;
-}
 
-footer, .page-wrap:after  {
-	height: 150px;
-}
-footer  {
-	position: relative;
-	padding-top: 10px;
-	text-align: center;
-	color: #E4E3E4;
-	background-color: #36393B;
-}
 .copyright {
 	text-align: right;
 	padding-right: 20px;
 	opacity: 0.4;
-	position: absolute;
-	bottom: 1em;
-	right: 1em;
 }
-
-/*
-mobile stuff, where nav is a div to the left and section is a div 
-to the right. when size too small (mobile) they are above each other
-@media screen and (min-width:600px) {
-  nav {
-    float: left;
-    width: 25%;
-  }
-  section {
-    margin-left: 25%;
-  }
-}
-@media screen and (max-width:599px) {
-  nav li {
-    display: inline;
-  }
-}
-*/
