@@ -8,6 +8,7 @@ var fs = require('fs');
 app.set('view engine', 'hbs')
 
 app.use(express.static(p_path));
+app.use(express.static(__dirname+'/css/'));
 
 app.use(function (req,res,next) {
 	console.log("/" + req.method);
@@ -17,21 +18,6 @@ app.use(function (req,res,next) {
 app.get("/",function(req,res){
 	res.render('index');
 });
-
-app.get("/boxes", function(req,res){
-	var all_boxes=[];
-	fs.readdir(box_location, function(err,files){
-	    if(err) throw err;
-	    files.forEach(function(file){
-	        // do something with each file HERE!
-	        if(file != '.DS_Store') { // BECAUSE WHY THE FUUUUUUUCK
-		        var content = fs.readFileSync(box_location + file, 'utf8');
-		        all_boxes.push(content);
-		    }
-	    });
-	});
-	res.render('boxes', {box: all_boxes});
-})
 
 app.use("*",function(req,res){
 	res.render('404');

@@ -32,48 +32,23 @@ header {
 	font-size: 200%;
 }
 
-main {
-	/*background: #AA7C9E;*/
-	display: block;
-	max-width: 1000px;
-	margin: 50px auto;
-	/*padding-top: 50px;*/
-}
-
-.error {
-	color: red;
-	text-align: center;
-}
-
 footer, .page-wrap:after  {
 	height: 150px;
 }
-
 footer  {
+	position: relative;
 	padding-top: 10px;
 	text-align: center;
 	color: #E4E3E4;
 	background-color: #36393B;
 }
-.social-media {
-	max-width: 500px;
-	margin: 0 auto;
-	padding: 1em;
-	-moz-column-count: 4;
-	-moz-column-gap: 1em;
-	-webkit-column-count: 4;
-	-webkit-column-gap: 1em;
-	column-count: 4;
-	column-gap: 1em;
-}
-
-.social-media a img:hover {
-  transform: scale(1.15, 1.15);
-}
 .copyright {
 	text-align: right;
 	padding-right: 20px;
 	opacity: 0.4;
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
 }
 
 /*
