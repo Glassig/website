@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- Optimized for mobile !-->
   		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		
-		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> 
+  		<!-- Own css !-->
 		<link rel="stylesheet" type="text/css" href="style.css">
+		
+      	<!--Import Google Icon Font-->
+      	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      	<!--Import materialize.css-->
+		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> 
+		<link rel="stylesheet" type="text/css" href="css/materialize.min.css"  media="screen,projection"/>
+
 		<title>Angelina's project</title>
 	</head>
 	<body>
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>  
-		<div class="page-wrap">
-			<header>
-				<h1>Hello!</h1>	
-			</header>
-			<div class="content">
-				{{{body}}}
+      	<!--Import jQuery before materialize.js-->
+      	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      	<script type="text/javascript" src="js/materialize.min.js"></script>
+      	<header>
+      		<div class="intro teal lighten-1 z-depth-1">
+				<h1 class="grey-text text-lighten-4">Angelina von Gegerfelt</h1>	
 			</div>
-		</div>
+      	</header>
+		<main>
+			{{{body}}}
+		</main>
+		<footer class="page-footer teal lighten-1">
+			<div class="container">
+				<h5 class="grey-text text-lighten-4">Footer text</h5>
+			</div>
+			<div class="footer-copyright">
+        		<div class="grey-text text-lighten-2 right-align">© 2016 Angelina von Gegerfelt</div>
+            </div>
+		</footer>
 	</body>
-	<!--footer>
-		<p class="copyright">© Copyright 2016 Angelina von Gegerfelt</p>
-	</footer!-->
 </html>

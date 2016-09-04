@@ -1,19 +1,27 @@
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-          margin: 0;
-}
-
 html, body {
 	font-family: 'Space Mono', monospace;
-	height: 100%;
-	background-color: #EDEDED;
+	background-color: #ede8e4 !important;
 }
 
+.intro
+{
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    margin-bottom: 50px;
+}
 
-.copyright {
-	text-align: right;
-	padding-right: 20px;
-	opacity: 0.4;
+.intro h1
+{
+    font-weight: 900;
+    text-transform: small-caps;
+}
+.boxes h3 {
+    font-size: 1.5em;
+}
+.boxes h1 {
+    font-size: 2em;
+}
+
+.work {
 }
