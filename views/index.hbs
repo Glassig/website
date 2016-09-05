@@ -4,16 +4,61 @@
 	<h6>previous work experience</h6>
 	<hr>
 	<div class="row">
-		<div class="col s12 m3 l3">
-			<h6>Explanation</h6>
-			<p>lorem ipsum dolor fbajkdm dfajnskl,afdsf adsnkl, edas ofdas mealdnjjf  skdldsam lfealdm snfjlkds zmdkfjnss adjkas short words and stuff i don't care about to explain somehting about my jobs</p>
+		<div class="col s12 m4 l4">
+			<div class="card-panel deep-purple lighten-1">
+				<p class="grey-text text-lighten-4">lorem ipsum dolor fbajkdm dfajnskl,afdsf adsnkl, edas ofdas mealdnjjf  skdldsam lfealdm snfjlkds zmdkfjnss adjkas short words and stuff i don't care about to explain somehting about my jobs</p>
+			</div>
 		</div>
-		<div class="boxes">
-			{{#each box}}
-				{{{this}}}
-			{{/each}}
+		<div class="col s12 m8 l8">
+			<ul class="collapsible popout" data-collapsible="accordion">
+				{{#each work}}
+					<li>
+						{{{this}}}
+					</li>
+				{{/each}}
+			</ul>
 		</div>
 	</div>
 </div>
-{{> edu}}
-{{> utake}}
+<div class="container edu">
+	<h5>education</h5>
+	<h6>courses and full educations</h6>
+	<hr>
+	<div class="row">
+		<div class="col s12 m8 l8">
+			<ul class="collapsible popout" data-collapsible="accordion">
+				{{#each edu}}
+					<li>
+						{{{this}}}
+					</li>
+				{{/each}}
+			</ul>			
+		</div>	
+		<div class="col s12 m4 l4">
+			<div class="card-panel blue lighten-1">
+				<p class="grey-text text-lighten-4">lorem ipsum dolor fbajkdm dfajnskl,afdsf adsnkl, edas ofdas mealdnjjf  skdldsam lfealdm snfjlkds zmdkfjnss adjkas short words and stuff i don't care about to explain somehting about my jobs</p>
+			</div>
+		</div>	
+	</div>
+</div>
+<div class="container utak">
+	<h5>undertakings</h5>
+	<h6>volunteer work and non-paid blaaaa</h6>
+	<hr>
+	<div class="row">
+		<div class="col s12 m4 l4">
+			<div class="card-panel deep-orange lighten-1">
+				<p class="grey-text text-lighten-4">lorem ipsum dolor fbajkdm dfajnskl,afdsf adsnkl, edas ofdas mealdnjjf  skdldsam lfealdm snfjlkds zmdkfjnss adjkas short words and stuff i don't care about to explain somehting about my jobs</p>
+			</div>
+		</div>
+		<div class="col s12 m8 l8">
+			<ul class="collapsible popout" data-collapsible="accordion">
+				{{#each utak}}
+					<li>
+						{{{this}}}
+					</li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+</div>

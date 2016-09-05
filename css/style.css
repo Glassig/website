@@ -1,4 +1,4 @@
-html, body {
+body {
 	font-family: 'Space Mono', monospace;
 	background-color: #ede8e4 !important;
 }
@@ -16,12 +16,25 @@ html, body {
     font-weight: 900;
     text-transform: small-caps;
 }
-.boxes h3 {
-    font-size: 1.5em;
-}
-.boxes h1 {
-    font-size: 2em;
-}
 
-.work {
+.collapsible-body {
+    background-color: white;
+}
+.collapsible-body h3 {
+    margin: 0rem 2rem;
+    padding-top: 0.4rem;
+    font-size: 1.7em;
+}
+i.work-icon {
+    color: #7e57c2;
+}
+i.edu-icon {
+    color: #64b5f6;
+}
+i.utak-icon {
+    color: #ff7043;
+}
+.card .card-action {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
 }

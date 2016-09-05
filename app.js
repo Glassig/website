@@ -20,19 +20,28 @@ app.use(function (req,res,next) {
 
 app.get("/boxes", function(req,res){
 	var all_boxes=[];
-	//var works = [];
-	//var edu = [];
+	var works = [];
+	var edus = [];
+	var utaks = [];
 	fs.readdir(post_location, function(err,files){
 	    if(err) throw err;
 	    files.forEach(function(file){
-	        if(file != '.DS_Store') { // BECAUSE WHY THE FUUUUUUUCK
-		        var content = fs.readFileSync(post_location + file, 'utf8');
-		        all_boxes.push(content);
-		        //console.log(content)
-		    }
+	    	switch(file.split(':')[0]) {
+	    		case 'work' :
+	    			works.unshift(fs.readFileSync(post_location + file, 'utf8'));
+	    			break;
+	    		case 'edu' :
+	    			edus.unshift(fs.readFileSync(post_location + file, 'utf8'));
+	    			break;
+	    		case 'utak' :
+	    			utaks.unshift(fs.readFileSync(post_location + file, 'utf8'));
+	    			break;
+	    		case '.DS_Store':
+	    			break;
+	    	}
 	    });
 	});
-	res.render('index', {box: all_boxes});
+	res.render('index', {work: works, edu: edus, utak: utaks});
 })
 
 app.get("/",function(req,res){
