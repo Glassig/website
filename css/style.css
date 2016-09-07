@@ -3,6 +3,26 @@ body {
 	background-color: #ede8e4 !important;
 }
 
+/*
+If on mobile, we want the descriptive text in the collapsible-body
+*/
+@media only screen and (max-width: 768px) {
+    .subtitle {
+        display: none;
+    }
+    .subtitle-mobile {
+        padding-right: 2rem;
+    }
+}
+/*
+If on a large screen, we want the descriptive text in the collapsible-header, not in the body.
+*/
+@media only screen and (min-width: 768px) {
+    .subtitle-mobile {
+        display: none;
+    }
+}
+
 .intro
 {
     text-align: center;
@@ -25,16 +45,23 @@ body {
     padding-top: 0.4rem;
     font-size: 1.7em;
 }
-i.work-icon {
-    color: #7e57c2;
-}
-i.edu-icon {
-    color: #64b5f6;
-}
-i.utak-icon {
-    color: #ff7043;
-}
+
 .card .card-action {
     padding-top: 4px !important;
     padding-bottom: 4px !important;
+}
+
+/*
+work: deep-purple lighten-1;
+edu: blue darken-1;
+utak: deep-orange lighten-1;
+*/
+i.work-icon, .work-text {
+    color: #7e57c2;
+}
+i.edu-icon, .edu-text {
+    color: #1e88e5;
+}
+i.utak-icon, .utak-text {
+    color: #ff7043;
 }
