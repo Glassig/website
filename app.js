@@ -13,12 +13,7 @@ app.use(express.static(p_path));
 app.use(express.static(__dirname+'/css/'));
 app.use(express.static(__dirname+'/node_modules/materialize-css/dist/'))
 
-app.use(function (req,res,next) {
-	console.log("/" + req.method);
-	next();
-});
-
-app.get("/boxes", function(req,res){
+app.get("/", function(req,res){
 	var all_boxes=[];
 	var works = [];
 	var edus = [];

@@ -22,10 +22,10 @@ If on a large screen, we want the descriptive text in the collapsible-header, no
         display: none;
     }
 }
-
+/*
 .collapsible-header:hover {
     background-color: #F5FFFA;
-}
+}*/
 
 .intro
 {
@@ -55,17 +55,22 @@ If on a large screen, we want the descriptive text in the collapsible-header, no
     padding-bottom: 4px !important;
 }
 
+.collapsible-header b {
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
 /*
 work: deep-purple lighten-1;
 edu: blue darken-1;
 utak: deep-orange lighten-1;
 */
-i.work-icon, .work-text {
+i.work-icon, .work-text, #work-coll li .collapsible-header:hover {
     color: #7e57c2;
 }
-i.edu-icon, .edu-text {
+i.edu-icon, .edu-text, #edu-coll li .collapsible-header:hover {
     color: #1e88e5;
 }
-i.utak-icon, .utak-text {
+i.utak-icon, .utak-text, #utak-coll li .collapsible-header:hover {
     color: #ff7043;
 }
