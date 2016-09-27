@@ -1,6 +1,6 @@
 body {
 	font-family: 'Space Mono', monospace;
-	background-color: #ede8e4 !important;
+	background-color: #F5F5F5 !important;
 }
 
 /*
@@ -21,6 +21,10 @@ If on a large screen, we want the descriptive text in the collapsible-header, no
     .subtitle-mobile {
         display: none;
     }
+}
+
+.collapsible-header:hover {
+    background-color: #F5FFFA;
 }
 
 .intro
