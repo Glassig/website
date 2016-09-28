@@ -13,4 +13,4 @@ echo "icon: ">>$src_name
 echo "layout: boxes.hbs">>$src_name
 echo "tags:">>$src_name
 echo "date: "$DATE"">>$src_name
-echo -e "---\n\n<br>\n{{date}}">>$src_name
+echo -e "---\n\n<br><br>\nTimeperiod: {{date}}">>$src_name
