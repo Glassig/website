@@ -42,6 +42,7 @@ If on a large screen, we want the descriptive text in the collapsible-header, no
 
 .collapsible-body {
     background-color: white;
+    color: rgba(0, 0, 0, 0.8);
 }
 .collapsible-body h3 {
     margin: 0rem 2rem;
