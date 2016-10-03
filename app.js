@@ -14,7 +14,11 @@ app.use(express.static(__dirname+'/css/'));
 app.use(express.static(__dirname+'/node_modules/materialize-css/dist/'))
 
 app.get("/", function(req,res){
-	var all_boxes=[];
+	var posts = getPosts();
+	res.render('index', {work: posts.works, edu: posts.edus, utak: posts.utaks});
+})
+
+function getPosts() {
 	var works = [];
 	var edus = [];
 	var utaks = [];
@@ -36,12 +40,12 @@ app.get("/", function(req,res){
 	    	}
 	    });
 	});
-	res.render('index', {work: works, edu: edus, utak: utaks});
-})
-
-app.get("/",function(req,res){
-	res.render('index');
-});
+	return {
+		works: works,
+		edus: edus,
+		utaks: utaks
+	};
+}
 
 app.use("*",function(req,res){
 	res.render('404');

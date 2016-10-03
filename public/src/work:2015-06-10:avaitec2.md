@@ -5,7 +5,7 @@ icon: folder
 subtitle: Sharepoint
 layout: boxes.hbs
 tags:
-date: 2015-06-10
+date: 2015-06-10:2015-08-07
 ---
 *Position:* Summerworker
 <br>
