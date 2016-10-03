@@ -34,7 +34,7 @@ If on a large screen, we want the descriptive text in the collapsible-header, no
     margin-bottom: 50px;
 }
 
-.container h5, .container h6 {
+.container h5 {
     color: #f5f5f5;
 }
 
