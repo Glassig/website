@@ -5,6 +5,9 @@ var v_path = __dirname + '/views/';
 var p_path = __dirname + '/public/';
 var post_location = p_path + 'build/';
 var fs = require('fs');
+var favicon = require('serve-favicon');
+
+app.use(favicon(p_path + 'images/favicon.ico'));
 
 app.set('view engine', 'hbs');
 hbs.registerPartials(__dirname + '/views/partials');
