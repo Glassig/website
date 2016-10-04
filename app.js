@@ -1,11 +1,12 @@
 var express = require("express");
 var hbs = require('hbs');
+var favicon = require('serve-favicon');
+var fs = require('fs');
+
 var app = express();
 var v_path = __dirname + '/views/';
 var p_path = __dirname + '/public/';
 var post_location = p_path + 'build/';
-var fs = require('fs');
-var favicon = require('serve-favicon');
 
 app.use(favicon(p_path + 'images/favicon.ico'));
 
