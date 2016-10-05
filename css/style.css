@@ -46,6 +46,14 @@ If on a large screen, we want the descriptive text in the collapsible-header, no
     text-transform: small-caps;
 }
 
+h5 {
+    text-transform: uppercase;
+}
+
+.socials li a {
+    background-color: white;
+}
+
 .collapsible-body {
     background-color: white;
 }
