@@ -49,13 +49,9 @@ function getPosts() {
 		utaks: utaks
 	};
 }
-
-app.use("*",function(req,res){
-	res.render('404');
-});
-
-app.listen(3000,function(){
-	console.log("Live at Port 3000");
+var port = process.env.PORT || 3000;
+app.listen(port, function(){
+	console.log("Live at Port " + port);
 });
 
 
