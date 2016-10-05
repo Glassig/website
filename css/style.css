@@ -50,10 +50,6 @@ h5, h6 {
     text-transform: uppercase;
 }
 
-.socials li a {
-    background-color: white;
-}
-
 .collapsible-body {
     background-color: white;
 }
@@ -86,4 +82,12 @@ i.edu-icon, .edu-text, #edu-coll li .collapsible-header:hover {
 }
 i.utak-icon, .utak-text, #utak-coll li .collapsible-header:hover {
     color: #ff7043;
+}
+
+.btn {
+    margin-bottom: 0.5em;
+}
+
+.btn:hover {
+    background-color: #4fc3f7 !important;
 }

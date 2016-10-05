@@ -15,7 +15,6 @@ hbs.registerPartials(__dirname + '/views/partials');
 
 app.use(express.static(p_path));
 app.use(express.static(__dirname+'/css/'));
-app.use(express.static(__dirname+'/node_modules/materialize-css/dist/'))
 
 app.get("/", function(req,res){
 	var posts = getPosts();

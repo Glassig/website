@@ -20,7 +20,6 @@
     "express": "^4.13.4",
     "express-hbs": "^1.0.1",
     "hbs": "^4.0.0",
-    "materialize-css": "^0.97.7",
     "metalsmith": "^2.1.0",
     "metalsmith-beautify": "^0.1.0",
     "metalsmith-in-place": "^1.4.4",
