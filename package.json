@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Glassig/website.git"
+    "url": "git+https://github.com/Glassig/glassig.github.io.git"
   },
   "author": "Angelina von Gegerfelt",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Glassig/website/issues"
+    "url": "https://github.com/Glassig/glassig.github.io/issues"
   },
-  "homepage": "https://github.com/Glassig/website#readme",
+  "homepage": "https://glassig.github.io",
   "dependencies": {
     "express": "^4.13.4",
     "express-hbs": "^1.0.1",
