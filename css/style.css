@@ -46,7 +46,7 @@ If on a large screen, we want the descriptive text in the collapsible-header, no
     text-transform: small-caps;
 }
 
-h5 {
+h5, h6 {
     text-transform: uppercase;
 }
 
