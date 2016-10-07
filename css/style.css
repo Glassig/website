@@ -84,6 +84,8 @@ i.utak-icon, .utak-text, #utak-coll li .collapsible-header:hover {
     color: #ff7043;
 }
 
+footer .socials { margin-top: 2em; }
+
 .btn {
     margin-bottom: 0.5em;
 }
