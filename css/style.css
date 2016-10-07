@@ -69,6 +69,10 @@ h5, h6 {
     font-size: 1.05em;
 }
 
+.footer-copyright div{
+    margin-right: 2em;
+}
+
 /*
 work: deep-purple lighten-1;
 edu: blue darken-1;
