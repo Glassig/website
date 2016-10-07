@@ -16,8 +16,9 @@ hbs.registerPartials(__dirname + '/views/partials');
 app.use(express.static(p_path));
 app.use(express.static(__dirname+'/css/'));
 
+var posts = getPosts();
+
 app.get("/", function(req,res){
-	var posts = getPosts();
 	res.render('index', {work: posts.works, edu: posts.edus, utak: posts.utaks});
 })
 
