@@ -27,5 +27,8 @@
     "metalsmith-layouts": "^1.6.5",
     "metalsmith-markdown": "^0.2.1",
     "serve-favicon": "^2.3.0"
+  },
+  "engines": {
+    "node": "5.7.0"
   }
 }
