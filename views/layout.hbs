@@ -26,6 +26,19 @@
       	<header>
       		<div class="intro teal lighten-1 z-depth-1">
 				<h1 class="grey-text text-lighten-4">&#123;Angelina von Gegerfelt&#125;</h1>
+				<!-- Modal Trigger -->
+				<a class="modal-trigger waves-effect waves-light btn light-blue" data-target="modal1">Download PDF</a>
+
+				<!-- Modal Structure -->
+				<div id="modal1" class="modal modal-fixed-footer">
+				    <div class="modal-content">
+				      	<h4>Download PDF version</h4>
+				      	<p>Some information available on this website might not be available in the pdf, and some text may differ. The content should still be quite similar.</p>
+				    </div>
+				    <div class="modal-footer">
+				      	<a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Agree</a>
+				    </div>
+				  </div> 
 			</div>
       	</header>
 		<main>
@@ -33,4 +46,10 @@
 		</main>
 		{{> footer}}
 	</body>
+	<script type="text/javascript">
+		 $(document).ready(function(){
+    	// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    	$('.modal-trigger').leanModal();
+  });
+	</script>
 </html>
