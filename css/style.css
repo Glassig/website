@@ -97,3 +97,16 @@ footer .socials { margin-top: 2em; }
 .btn:hover {
     background-color: #4fc3f7 !important;
 }
+
+.modal-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.modal-content p {
+    align-self: flex-start;
+}
+.modal-content a {
+    align-self: center;
+}
