@@ -1,0 +1,20 @@
+{
+	"name": "Angelina von Gegerfelt's website",
+	"short_name": "Angelina",
+	"start_url": ".",
+	"background_color": "#f1f0f2",
+	"description": "A personal website, like a CV, for Angelina von Gegerfelt",
+	"display": "fullscreen",
+	"icons": [{
+		"src": "/images/favicon.ico",
+		"type": "image/x-icon",
+		"sizes": "16x16"
+	}, {
+		"src": "/images/personal3.png",
+		"type": "image/png",
+		"sizes": "512x512"
+	}],
+	"dir": "ltr",
+	"lang": "en",
+	"theme_color": "#26a69a"
+}

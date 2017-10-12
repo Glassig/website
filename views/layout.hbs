@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<!-- GET UTF-8 for special characters -->
 		<meta charset="utf-8" /> 
 		<!-- Optimized for mobile !-->
   		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+  		<!-- Set browser color items -->
+  		<meta name="theme-color" content="#26a69a">
   		<!-- Own css !-->
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link async rel="stylesheet" type="text/css" href="style.css">
 
-		<!--Import jQuery before materialize.js-->
-      	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<!-- Compiled and minified CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-  		<!-- Compiled and minified JavaScript -->
-  		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-   
+		<link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+          
    		<!-- Socicon (social icons) -->
-		<link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">		
+		<link async href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">		
       	<!--Import Google Icon Font-->
-      	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      	<link async href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       	<!--Import font-->
-		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> 
+		<link async href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> 
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" type="image/png" href="/images/favicon.ico">
+		<link async rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+
+		<link async rel="manifest" href="/manifest.json">
 
 		<!-- Background pattern is from http://www.heropatterns.com/ -->
 
@@ -54,10 +54,15 @@
 		</main>
 		{{> footer}}
 	</body>
+	<!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!-- Compiled and minified JavaScript -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
 	<script type="text/javascript">
 		 $(document).ready(function(){
-    	// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    	$('.modal-trigger').leanModal();
-  });
+    		// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    		$('.modal-trigger').leanModal();
+  		});
 	</script>
 </html>
