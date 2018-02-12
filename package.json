@@ -18,15 +18,15 @@
   },
   "homepage": "https://glassig.github.io",
   "dependencies": {
-    "express": "^4.13.4",
+    "express": "^4.16.2",
     "express-hbs": "^1.0.1",
     "hbs": "^4.0.0",
     "metalsmith": "^2.1.0",
     "metalsmith-beautify": "^0.1.0",
     "metalsmith-in-place": "^1.4.4",
     "metalsmith-layouts": "^1.6.5",
-    "metalsmith-markdown": "^0.2.1",
-    "nodemon": "^1.11.0",
+    "metalsmith-markdown": "^0.2.2",
+    "nodemon": "^1.14.12",
     "serve-favicon": "^2.3.0"
   },
   "engines": {
