@@ -53,6 +53,10 @@ If on a large screen, we want the descriptive text in the collapsible-header, no
     text-transform: small-caps;
 }
 
+.intro #pdfButton {
+    box-shadow: 5px 5px 0 white;
+}
+
 h5, h6 {
     text-transform: uppercase;
 }
@@ -105,10 +109,22 @@ i.utak-icon, .utak-text, #utak-coll li .collapsible-header:hover {
 
 footer .socials { margin-top: 2em; }
 
-.btn {
+.socials li {
+    margin: 8px auto;
+}
+
+.socials .footerButton {
+    box-shadow: 4px 4px 0 white;
+}
+
+.intro #pdfButton, .btn, .socials .footerButton {
     margin-bottom: 0.5em;
+    border-radius: 0;
+    border: 1px solid white;
+    background:none;
 }
 
 .btn:hover {
-    background-color: #4fc3f7 !important;
+    box-shadow: 0 0 white !important;
+    background: none !important;
 }
