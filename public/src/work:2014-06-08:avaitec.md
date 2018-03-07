@@ -5,10 +5,10 @@ icon: web
 subtitle: Sharepoint
 layout: boxes.hbs
 tags:
-date: 2014-06-08:2014-08-01
+date: Summers of 2014 & 2015
 ---
 *Position:* Summerworker
 <br>
-Avaitec AB is a small consulting firm developing Sharepoint for company intranets. I helped with transfering files and tables between an old intranet to a new one, then I got the tast to create a basic CSS design for a possible new customer.
+Avaitec AB is a small consulting firm developing Sharepoint for company intranets. I wrote a Powershell script in order to transfer a lot of data from an old intranet to the new one without changing owner or date. I did some CSS work, one for a customer that had switched design and another for a potential new customer.
 <br><br>
 Timeperiod: {{date}}
